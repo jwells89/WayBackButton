@@ -30,7 +30,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
 
     override func toolbarItemClicked(in window: SFSafariWindow) {
-        os_log(.default, "The extension's toolbar item was clicked")
+        window.getActiveTab { [weak self] activeTab in
+            activeTab?.getActivePage(completionHandler: { page in
+                page?.getPropertiesWithCompletionHandler({ properties in
+                    guard let url = properties?.url else { return }
+                    
+                    self?.fetchLatestSnapshotURL(for: url, tab: activeTab)
+                })
+            })
+        }
     }
 
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
@@ -39,6 +47,55 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
     override func popoverViewController() -> SFSafariExtensionViewController {
         return SafariExtensionViewController.shared
+    }
+    
+    func fetchLatestSnapshotURL(for url: URL, tab: SFSafariTab?) {
+        let encodedURLString = url.absoluteString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        var queryURLComponents = URLComponents(string: "https://archive.org/wayback/available")
+        queryURLComponents?.queryItems = [URLQueryItem(name: "url", value: encodedURLString)]
+        
+        guard let queryURL = queryURLComponents?.url else {
+            os_log("URL components failed")
+            return
+        }
+        let queryTask = URLSession.shared.dataTask(with: URLRequest(url: queryURL)) { data, response, error in
+            guard let data else {
+                os_log("No data")
+                
+                if let error {
+                    if #available(macOSApplicationExtension 11.0, *) {
+                        os_log("Error: \(error.localizedDescription)")
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                }
+                return
+            }
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            
+            do {
+                let queryResponse = try decoder.decode(QueryResponse.self, from: data)
+                guard let currentSnapshot = queryResponse.archivedSnapshots?.closest,
+                      let snapshotURL = currentSnapshot.url else { return }
+                
+                tab?.navigate(to: snapshotURL)
+                
+                tab?.getContainingWindow(completionHandler: { window in
+                    window?.getToolbarItem(completionHandler: { toolbarItem in
+                        toolbarItem?.showPopover()
+                    })
+                })
+                
+            } catch {
+                if #available(macOSApplicationExtension 11.0, *) {
+                    os_log("Decode error: \(error)")
+                } else {
+                    // Fallback on earlier versions
+                }
+            }
+        }
+        queryTask.resume()
     }
 
 }

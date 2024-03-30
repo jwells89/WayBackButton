@@ -8,10 +8,11 @@
 import SafariServices
 
 class SafariExtensionViewController: SFSafariExtensionViewController {
+    @IBOutlet weak var errorLabel: NSTextField!
     
     static let shared: SafariExtensionViewController = {
         let shared = SafariExtensionViewController()
-        shared.preferredContentSize = NSSize(width:320, height:240)
+        shared.preferredContentSize = NSSize(width:330, height:77)
         return shared
     }()
 

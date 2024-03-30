@@ -18,9 +18,9 @@
 		B3A00E5D2BB7ABDC004C1BAC /* WayBackButton Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B3A00E622BB7ABDC004C1BAC /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */; };
 		B3A00E642BB7ABDC004C1BAC /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */; };
-		B3A00E672BB7ABDC004C1BAC /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E662BB7ABDC004C1BAC /* script.js */; };
 		B3A00E692BB7ABDC004C1BAC /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */; };
 		B3A00E6C2BB7ABDC004C1BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E6B2BB7ABDC004C1BAC /* Base */; };
+		B3A00E792BB7B09A004C1BAC /* QueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E782BB7B09A004C1BAC /* QueryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +62,11 @@
 		B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WayBackButton Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
-		B3A00E662BB7ABDC004C1BAC /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		B3A00E6B2BB7ABDC004C1BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		B3A00E6D2BB7ABDC004C1BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3A00E6E2BB7ABDC004C1BAC /* WayBackButton_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WayBackButton_Extension.entitlements; sourceTree = "<group>"; };
+		B3A00E782BB7B09A004C1BAC /* QueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +135,7 @@
 			children = (
 				B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */,
 				B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */,
+				B3A00E782BB7B09A004C1BAC /* QueryResponse.swift */,
 				B3A00E6A2BB7ABDC004C1BAC /* SafariExtensionViewController.xib */,
 				B3A00E6D2BB7ABDC004C1BAC /* Info.plist */,
 				B3A00E6E2BB7ABDC004C1BAC /* WayBackButton_Extension.entitlements */,
@@ -146,7 +147,6 @@
 		B3A00E652BB7ABDC004C1BAC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B3A00E662BB7ABDC004C1BAC /* script.js */,
 				B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */,
 			);
 			path = Resources;
@@ -248,7 +248,6 @@
 			files = (
 				B3A00E692BB7ABDC004C1BAC /* ToolbarItemIcon.pdf in Resources */,
 				B3A00E6C2BB7ABDC004C1BAC /* Base in Resources */,
-				B3A00E672BB7ABDC004C1BAC /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +269,7 @@
 			files = (
 				B3A00E642BB7ABDC004C1BAC /* SafariExtensionViewController.swift in Sources */,
 				B3A00E622BB7ABDC004C1BAC /* SafariExtensionHandler.swift in Sources */,
+				B3A00E792BB7B09A004C1BAC /* QueryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
