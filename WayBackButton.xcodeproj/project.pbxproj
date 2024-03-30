@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3A00E442BB7ABD9004C1BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E432BB7ABD9004C1BAC /* AppDelegate.swift */; };
+		B3A00E482BB7ABD9004C1BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E472BB7ABD9004C1BAC /* Base */; };
+		B3A00E4A2BB7ABD9004C1BAC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E492BB7ABD9004C1BAC /* Icon.png */; };
+		B3A00E4C2BB7ABD9004C1BAC /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E4B2BB7ABD9004C1BAC /* Style.css */; };
+		B3A00E4E2BB7ABD9004C1BAC /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E4D2BB7ABD9004C1BAC /* Script.js */; };
+		B3A00E502BB7ABD9004C1BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E4F2BB7ABD9004C1BAC /* ViewController.swift */; };
+		B3A00E532BB7ABD9004C1BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E522BB7ABD9004C1BAC /* Base */; };
+		B3A00E552BB7ABDC004C1BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E542BB7ABDC004C1BAC /* Assets.xcassets */; };
+		B3A00E5D2BB7ABDC004C1BAC /* WayBackButton Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3A00E622BB7ABDC004C1BAC /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */; };
+		B3A00E642BB7ABDC004C1BAC /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */; };
+		B3A00E672BB7ABDC004C1BAC /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E662BB7ABDC004C1BAC /* script.js */; };
+		B3A00E692BB7ABDC004C1BAC /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */; };
+		B3A00E6C2BB7ABDC004C1BAC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3A00E6B2BB7ABDC004C1BAC /* Base */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3A00E5E2BB7ABDC004C1BAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3A00E382BB7ABD9004C1BAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3A00E5B2BB7ABDC004C1BAC;
+			remoteInfo = "WayBackButton Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3A00E742BB7ABDC004C1BAC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3A00E5D2BB7ABDC004C1BAC /* WayBackButton Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B3A00E402BB7ABD9004C1BAC /* WayBackButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WayBackButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A00E432BB7ABD9004C1BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3A00E472BB7ABD9004C1BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		B3A00E492BB7ABD9004C1BAC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B3A00E4B2BB7ABD9004C1BAC /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		B3A00E4D2BB7ABD9004C1BAC /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		B3A00E4F2BB7ABD9004C1BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3A00E522BB7ABD9004C1BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3A00E542BB7ABDC004C1BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3A00E562BB7ABDC004C1BAC /* WayBackButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WayBackButton.entitlements; sourceTree = "<group>"; };
+		B3A00E572BB7ABDC004C1BAC /* WayBackButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WayBackButton.entitlements; sourceTree = "<group>"; };
+		B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WayBackButton Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		B3A00E662BB7ABDC004C1BAC /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		B3A00E6B2BB7ABDC004C1BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		B3A00E6D2BB7ABDC004C1BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A00E6E2BB7ABDC004C1BAC /* WayBackButton_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WayBackButton_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3A00E3D2BB7ABD9004C1BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A00E592BB7ABDC004C1BAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3A00E372BB7ABD9004C1BAC = {
+			isa = PBXGroup;
+			children = (
+				B3A00E422BB7ABD9004C1BAC /* WayBackButton */,
+				B3A00E602BB7ABDC004C1BAC /* WayBackButton Extension */,
+				B3A00E412BB7ABD9004C1BAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3A00E412BB7ABD9004C1BAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00E402BB7ABD9004C1BAC /* WayBackButton.app */,
+				B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3A00E422BB7ABD9004C1BAC /* WayBackButton */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00E432BB7ABD9004C1BAC /* AppDelegate.swift */,
+				B3A00E4F2BB7ABD9004C1BAC /* ViewController.swift */,
+				B3A00E512BB7ABD9004C1BAC /* Main.storyboard */,
+				B3A00E542BB7ABDC004C1BAC /* Assets.xcassets */,
+				B3A00E562BB7ABDC004C1BAC /* WayBackButton.entitlements */,
+				B3A00E572BB7ABDC004C1BAC /* WayBackButton.entitlements */,
+				B3A00E452BB7ABD9004C1BAC /* Resources */,
+			);
+			path = WayBackButton;
+			sourceTree = "<group>";
+		};
+		B3A00E452BB7ABD9004C1BAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00E462BB7ABD9004C1BAC /* Main.html */,
+				B3A00E492BB7ABD9004C1BAC /* Icon.png */,
+				B3A00E4B2BB7ABD9004C1BAC /* Style.css */,
+				B3A00E4D2BB7ABD9004C1BAC /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3A00E602BB7ABDC004C1BAC /* WayBackButton Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00E612BB7ABDC004C1BAC /* SafariExtensionHandler.swift */,
+				B3A00E632BB7ABDC004C1BAC /* SafariExtensionViewController.swift */,
+				B3A00E6A2BB7ABDC004C1BAC /* SafariExtensionViewController.xib */,
+				B3A00E6D2BB7ABDC004C1BAC /* Info.plist */,
+				B3A00E6E2BB7ABDC004C1BAC /* WayBackButton_Extension.entitlements */,
+				B3A00E652BB7ABDC004C1BAC /* Resources */,
+			);
+			path = "WayBackButton Extension";
+			sourceTree = "<group>";
+		};
+		B3A00E652BB7ABDC004C1BAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00E662BB7ABDC004C1BAC /* script.js */,
+				B3A00E682BB7ABDC004C1BAC /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3A00E3F2BB7ABD9004C1BAC /* WayBackButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3A00E752BB7ABDC004C1BAC /* Build configuration list for PBXNativeTarget "WayBackButton" */;
+			buildPhases = (
+				B3A00E3C2BB7ABD9004C1BAC /* Sources */,
+				B3A00E3D2BB7ABD9004C1BAC /* Frameworks */,
+				B3A00E3E2BB7ABD9004C1BAC /* Resources */,
+				B3A00E742BB7ABDC004C1BAC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3A00E5F2BB7ABDC004C1BAC /* PBXTargetDependency */,
+			);
+			name = WayBackButton;
+			productName = WayBackButton;
+			productReference = B3A00E402BB7ABD9004C1BAC /* WayBackButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3A00E5B2BB7ABDC004C1BAC /* WayBackButton Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3A00E712BB7ABDC004C1BAC /* Build configuration list for PBXNativeTarget "WayBackButton Extension" */;
+			buildPhases = (
+				B3A00E582BB7ABDC004C1BAC /* Sources */,
+				B3A00E592BB7ABDC004C1BAC /* Frameworks */,
+				B3A00E5A2BB7ABDC004C1BAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WayBackButton Extension";
+			productName = "WayBackButton Extension";
+			productReference = B3A00E5C2BB7ABDC004C1BAC /* WayBackButton Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3A00E382BB7ABD9004C1BAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B3A00E3F2BB7ABD9004C1BAC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B3A00E5B2BB7ABDC004C1BAC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B3A00E3B2BB7ABD9004C1BAC /* Build configuration list for PBXProject "WayBackButton" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3A00E372BB7ABD9004C1BAC;
+			productRefGroup = B3A00E412BB7ABD9004C1BAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3A00E3F2BB7ABD9004C1BAC /* WayBackButton */,
+				B3A00E5B2BB7ABDC004C1BAC /* WayBackButton Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3A00E3E2BB7ABD9004C1BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A00E4A2BB7ABD9004C1BAC /* Icon.png in Resources */,
+				B3A00E4E2BB7ABD9004C1BAC /* Script.js in Resources */,
+				B3A00E482BB7ABD9004C1BAC /* Base in Resources */,
+				B3A00E4C2BB7ABD9004C1BAC /* Style.css in Resources */,
+				B3A00E552BB7ABDC004C1BAC /* Assets.xcassets in Resources */,
+				B3A00E532BB7ABD9004C1BAC /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A00E5A2BB7ABDC004C1BAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A00E692BB7ABDC004C1BAC /* ToolbarItemIcon.pdf in Resources */,
+				B3A00E6C2BB7ABDC004C1BAC /* Base in Resources */,
+				B3A00E672BB7ABDC004C1BAC /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3A00E3C2BB7ABD9004C1BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A00E502BB7ABD9004C1BAC /* ViewController.swift in Sources */,
+				B3A00E442BB7ABD9004C1BAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A00E582BB7ABDC004C1BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A00E642BB7ABDC004C1BAC /* SafariExtensionViewController.swift in Sources */,
+				B3A00E622BB7ABDC004C1BAC /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3A00E5F2BB7ABDC004C1BAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3A00E5B2BB7ABDC004C1BAC /* WayBackButton Extension */;
+			targetProxy = B3A00E5E2BB7ABDC004C1BAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3A00E462BB7ABD9004C1BAC /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3A00E472BB7ABD9004C1BAC /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		B3A00E512BB7ABD9004C1BAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3A00E522BB7ABD9004C1BAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3A00E6A2BB7ABDC004C1BAC /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3A00E6B2BB7ABDC004C1BAC /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3A00E6F2BB7ABDC004C1BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3A00E702BB7ABDC004C1BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B3A00E722BB7ABDC004C1BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WayBackButton Extension/WayBackButton_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z534HUMB6C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WayBackButton Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WayBackButton Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.wells.WayBackButton.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3A00E732BB7ABDC004C1BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WayBackButton Extension/WayBackButton_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z534HUMB6C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WayBackButton Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WayBackButton Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.wells.WayBackButton.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B3A00E762BB7ABDC004C1BAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WayBackButton/WayBackButton.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z534HUMB6C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WayBackButton;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.wells.WayBackButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3A00E772BB7ABDC004C1BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WayBackButton/WayBackButton.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z534HUMB6C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WayBackButton;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.wells.WayBackButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3A00E3B2BB7ABD9004C1BAC /* Build configuration list for PBXProject "WayBackButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A00E6F2BB7ABDC004C1BAC /* Debug */,
+				B3A00E702BB7ABDC004C1BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3A00E712BB7ABDC004C1BAC /* Build configuration list for PBXNativeTarget "WayBackButton Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A00E722BB7ABDC004C1BAC /* Debug */,
+				B3A00E732BB7ABDC004C1BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3A00E752BB7ABDC004C1BAC /* Build configuration list for PBXNativeTarget "WayBackButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3A00E762BB7ABDC004C1BAC /* Debug */,
+				B3A00E772BB7ABDC004C1BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3A00E382BB7ABD9004C1BAC /* Project object */;
+}
